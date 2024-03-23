@@ -1,0 +1,77 @@
+.main{
+    background-color: #dac4ec;
+}
+
+
+.cal{
+    width: 259px;
+    height: 500px;
+    background-color: #081d32;
+    border-radius: 25px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.cal_top{
+    width: 100%;
+    height: 40%;
+    background-color: #081d32;
+    border-radius: 25px 25px 0px 0px;
+    margin: auto;
+}
+
+
+
+.cal_bottom{
+    width: 100%;
+    height: 60%;
+    background-color: #081d32;
+    border-radius: 0px 0px 25px 25px;
+    margin: auto;
+}
+
+
+
+.bt1{
+    padding: 0 !important;
+}
+
+.row1{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.lbl{
+    color:white;
+    height: 100%;
+    text-align: right;
+    width: 100%;
+    padding-right: 15px;
+    padding-top: 30%;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+.sabz{color: #4fb935;}
+
+.bnf{
+    color: #a784ff;
+}
+
+
+button{
+    width: 100%;
+    height: 60px;
+    background-color: #0e2a48;
+    border: 1px solid #05162a;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+button:focus {
+    outline: none;
+    background-color: #0e2a48 !important;
+}

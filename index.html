@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta name="viewport" content="viewport-fit=cover,width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+        <link href="bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="main">
+
+        <br>
+        <br>
+        <br>
+
+
+        <div class="cal">
+            <div class="cal_top">
+                <label class="lbl" id="l">
+                    0
+                </label>
+            </div>
+
+            <div class="cal_bottom">
+
+                <div class="row row1">
+
+                    <div class="col bt1"><button class=" waves-effect waves-light sabz" onclick="zero()">C</button></div>
+                    <div class="col bt1"><button class=" waves-effect waves-light sabz"> &lt; </button></div>
+                    <div class="col bt1"><button class=" waves-effect waves-light bnf"> / </button></div>
+                    <div class="col bt1"><button class=" waves-effect waves-light bnf"> x </button></div>
+                
+                </div>
+
+                
+                <div class="row row1">
+
+                    <div class="col bt1"><button  class=" waves-effect waves-light " onclick="show('7')">      7     </button></div>
+                    <div class="col bt1"><button class=" waves-effect waves-light " onclick="show('8')">8</button></div>
+                    <div class="col bt1"><button class=" waves-effect waves-light " onclick="show('9')">9</button></div>
+                    <div class="col bt1"><button class="waves-effect waves-light bnf">-</button></div>
+                
+                </div>
+
+                <div class="row row1">
+
+                    <div class="col bt1"><button class=" waves-effect waves-light " onclick="show('4')">4</button></div>
+                    <div class="col bt1"><button class=" waves-effect waves-light " onclick="show('5')">5</button></div>
+                    <div class="col bt1"><button class=" waves-effect waves-light " onclick="show('6')">6</button></div>
+                    <div class="col bt1"><button class="waves-effect waves-light bnf">+</button></div>
+                
+                </div>
+
+
+                <div class="row row1">
+                    <div class="col-9 bt1">          
+                        <div class="row row1">
+
+                            <div class="col bt1">
+                                <button class=" waves-effect waves-light " onclick="show('1')">1</button>
+                            </div>
+
+                            <div class="col bt1">
+                                <button class=" waves-effect waves-light " onclick="show('2')">2</button>
+                            </div>
+
+                            <div class="col bt1">
+                                <button class=" waves-effect waves-light " onclick="show('3')">3</button>
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="row row1">
+
+                            <div class="col-8 bt1">
+                                <button class=" waves-effect waves-light " style="border-radius: 0px 0px 0px 25px ;">0</button>
+                            </div>
+
+                            <div class="col-4 bt1">
+                                <button class=" waves-effect waves-light ">.</button>
+                            </div> 
+                        
+                        </div>
+                    </div>
+
+                    <div class="col-3 bt1">
+                        <button class="waves-effect waves-light sabz" style="height:120px ; border-radius: 0px 0px 25px 0px ;">=</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <br>  
+            
+        <script src="bootstrap.min.js" ></script>
+
+        <script>
+            var s='';
+            function show(i){
+                s=s+ i;
+                document.getElementById("l").innerText=s;
+            }
+
+            function zero(){
+                s='';
+                document.getElementById("l").innerText='0';
+            }
+        </script>
+    </body>
+</html>
